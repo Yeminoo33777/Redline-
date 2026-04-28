@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redline SP - Contact</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Redline SP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="play.html">Play</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Have questions, suggestions, or just want to say hi? Feel free to reach out!</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="formFeedback"></p>
+
+
+            <div class="contact-info">
+                <h3>Other ways to connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">💬 Discord</a>
+                    <a href="#" class="social-link">📧 Email</a>
+                    <a href="#" class="social-link">📁 GitHub</a>
+                </div>
+                <p class="note">(These are placeholder links – no actual accounts yet.)</p>
+            </div>
+
+            <div class="faq-mini">
+                <h3>Quick FAQ</h3>
+                <details>
+                    <summary>Is this the real Redline.io?</summary>
+                    <p>No, it's a fan‑made single‑player tribute built with Three.js.</p>
+                </details>
+                <details>
+                    <summary>Can I play offline?</summary>
+                    <p>Yes! Once the page is loaded, you can play without an internet connection.</p>
+                </details>
+                <details>
+                    <summary>Will there be updates?</summary>
+                    <p>Maybe! If there's interest, I might add new maps, weapons, or game modes.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Redline Single Player. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redline Single Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="menu">
+    <h1>Redline Single Player</h1>
+    <p>WASD = Move | Space = Jump | Shift = Sprint | Click = Shoot | R = Reload | Right Click = Scope</p>
+    <button id="playBtn">PLAY</button>
+    <button id="menuHomeBtn" onclick="window.location.href='index.html';">HOME</button>
+  </div>
+
+  <div id="hud">
+    <div id="topHud">
+      <span id="hp">HP: 100</span>
+      <span id="ammo">Ammo: 30 / 30</span>
+      <span id="kills">Kills: 0</span>
+    </div>
+
+    <div id="crosshair">+</div>
+    <div id="characterInfo" class="ui-panel">
+      <div class="panel-title">🧑‍🦰 CHARACTER</div>
+      <div id="healthBarContainer">
+        <div id="healthBarFill"></div>
+      </div>
+      <span id="healthText">100 HP</span>
+    </div>
+
+    <div id="gunInfo" class="ui-panel">
+      <div class="panel-title">🔫 GUN</div>
+      <div id="gunDisplay">
+        <span id="ammoIcon">🔫</span>
+        <span id="ammoCount">30 / 30</span>
+      </div>
+      <div id="bulletIcon">🔴</div>
+    </div>
+
+    <div id="botInfo" class="ui-panel">
+      <div class="panel-title">🤖 BOTS</div>
+      <div id="botCountDisplay">0 alive</div>
+      <div id="botKillsDisplay">💀 Kills: 0</div>
+    </div>
+
+    <div id="minimapContainer" class="ui-panel">
+      <div class="panel-title">🗺️ MINIMAP</div>
+      <canvas id="minimapCanvas" width="200" height="200"></canvas>
+    </div>
+
+    <div id="homeButton" onclick="event.stopPropagation(); window.location.href='index.html';">🏠 Home</div>
+  </div>
+
+  <div id="scopeOverlay"></div>
+
+  <div id="hitOverlay"></div>
+
+  <div id="retryMenu" style="display: none;">
+    <div id="retryContent">
+      <h2>💀 You Died</h2>
+      <p>Kills: <span id="finalKills">0</span></p>
+      <button id="retryBtn">RETRY</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
